@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YodaArts | Template</title>
+    <link rel="fav icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<main class="main">
+<header class="header">
+    <img src="logo.png">
+    <h3>Template <i class="fas fa-shopping-cart"></i> Store</h3>
+</header>
+<div class="page_header">
+        <h1>Use a criatividade para fazer suas próprias camisas e moletons com nosso MOCKUP super fácil de ser editado!
+            <p style="margin-left: 73%; font-family: Dm Sans; font-size: 20px; color: black;">Compatível com: <img style="width: 40px; float: right; margin-top: -8px;" src="photoshop_icon_png.png"></p>
+        </h1>
+    </div>
+<section id="product">
+
+
+<div id="product_list" class="product_list">
+<div class="product_container">
+    <div class="product_info">
+            <div class="img-comp-container">
+                    <div class="img-comp-img">
+                      <img src="hoodie.png">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="hoodie_transparent.png">
+                    </div>
+                  </div>
+        <h1>Moletom <span>Mockup</span></h1>
+        <h2 style="margin-top: 20px;" class="product_compatibile"><strong>Compatível:</strong> <img style="width: 20px;margin-left: 3px; margin-bottom: -5px; border-radius: 0;" src="photoshop_icon.png"></h2>
+        <h2 class="product_description"><strong>Descrição:</strong> Parte da Frente e Costas</h2>
+        <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
+        <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans;">60R$</span> 45R$</h3>
+        <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-179b58a8-c57c-4056-9b51-b395222ceb5d">Comprar</a></button>
+    </div>
+</div>
+
+<div class="product_container">
+    <div class="product_info">
+            <div class="img-comp-container">
+                    <div class="img-comp-img">
+                      <img src="jerseytemplate.png">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="jersey_transparent.png">
+                    </div>
+                  </div>
+        <h1>Camisa <span>Mockup</span></h1>
+        <h2 style="margin-top: 20px;" class="product_compatibile"><strong>Compatível:</strong> <img style="width: 20px;margin-left: 3px; margin-bottom: -5px; border-radius: 0;" src="photoshop_icon.png"></h2>
+        <h2 class="product_description"><strong>Descrição:</strong> Parte da Frente e Costas</h2>
+        <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
+        <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans;">55R$</span> 40R$</h3>
+        <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-f50bba24-a4cf-45e6-b197-aca52b9db085">Comprar</a></button>
+    </div>
+</div>
+
+<div class="product_container">
+    <div class="product_info">
+            <div class="img-comp-container">
+                    <div class="img-comp-img">
+                      <img src="hoodie1.png">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                      <img src="hoodie1_transparent.png">
+                    </div>
+                  </div>
+        <h1>Moletom <span>Mockup</span></h1>
+        <h2 style="margin-top: 20px;" class="product_compatibile"><strong>Compatível:</strong>  <img style="width: 20px;margin-left: 3px; margin-bottom: -5px; border-radius: 0;" src="photoshop_icon.png"></h2>
+        <h2 class="product_description"><strong>Descrição:</strong> Parte da Frente</h2>
+        <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
+        <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans; margin-top: -10%;">30R$</span> 25R$</h3>
+        <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-3d980274-a3b8-4377-93a1-9582f8fdbf3d">Comprar</a></button>
+    </div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer_container">
+        <img src="logo.png">
+        <h1>2020 © Pormazion Inc.</h1>
+
+        <a href="https://www.youtube.com/channel/UCfgq7Fqdfu2KL8RgqZponXw?view_as=subscriber"><i class="fab fa-youtube" style="margin-right: 10px;"></i> YouTube</a>
+    </div>
+</footer>
+
+
+<script>
+
+
+
+
+
+function initComparisons() {
+  var x, i;
+  /* Find all elements with an "overlay" class: */
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /* Once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function: */
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /* Get the width and height of the img element */
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /* Set the width of the img element to 50%: */
+    img.style.width = (w / 2) + "px";
+    /* Create slider: */
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /* Insert slider */
+    img.parentElement.insertBefore(slider, img);
+    /* Position the slider in the middle: */
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /* Execute a function when the mouse button is pressed: */
+    slider.addEventListener("mousedown", slideReady);
+    /* And another function when the mouse button is released: */
+    window.addEventListener("mouseup", slideFinish);
+    /* Or touched (for touch screens: */
+    slider.addEventListener("touchstart", slideReady);
+     /* And released (for touch screens: */
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /* Prevent any other actions that may occur when moving over the image: */
+      e.preventDefault();
+      /* The slider is now clicked and ready to move: */
+      clicked = 1;
+      /* Execute a function when the slider is moved: */
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /* The slider is no longer clicked: */
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /* If the slider is no longer clicked, exit this function: */
+      if (clicked == 0) return false;
+      /* Get the cursor's x position: */
+      pos = getCursorPos(e)
+      /* Prevent the slider from being positioned outside the image: */
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /* Execute a function that will resize the overlay image according to the cursor: */
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /* Get the x positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x coordinate, relative to the image: */
+      x = e.pageX - a.left;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /* Resize the image: */
+      img.style.width = x + "px";
+      /* Position the slider: */
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+<script>
+        initComparisons();
+        </script>
+
+</body>
+</html>
