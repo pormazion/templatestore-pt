@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Staatliches|DM+Sans|Darker+Grotesque|Fjalla+One|Oswald|PT+Sans|Teko|Roboto|Roboto+Slab|Viga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Anton|Bebas+Neue|Staatliches|DM+Sans|Darker+Grotesque|Fjalla+One|Oswald|PT+Sans|Teko|Roboto|Roboto+Slab|Viga&display=swap');
 
 *{
     margin: 0;
@@ -87,7 +87,7 @@
     border-radius: 7px 7px 0px 0px;
     border: 1px solid rgb(223, 222, 213);
     box-shadow: 0px 0px 5px rgb(224, 223, 215);
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     transition: 0.3s;
 }
 .product_container:hover{
@@ -163,11 +163,81 @@
 .view_product:hover{
     background: rgb(187, 54, 54);
 }
+#discount{
+    display: inline-flex;
+    transition: 0.4s;
+    margin-left: -10px;
+}
+#discount i{
+    transform: rotate(-15deg);
+}
+#discount input{
+    transform: rotate(0deg);
+    width: 90px;
+    background: rgb(218, 218, 218);
+    border: none;
+    padding: 5px 5px;
+    transition: 0.4s;
+    font-family: "Teko";
+    font-weight: 100;
+    font-size: 16px;
+    border-radius: 3px;
+}
+#discount input::placeholder{
+    font-family: "Teko";
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#informations{
+    background: rgb(20, 20, 20);
+}
+.informations{
+    z-index: 3;
+    height: 700px;
+    width: 1200px;
+    background: rgb(20, 20, 20);
+    margin: auto;
+}
+.informations h1{
+    margin: 100px 40px 20px;
+    float: left;
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    text-align: right;
+    width: 500px;
+    color: rgb(214, 193, 135);
+}
+.informations h2{
+    clear: both;
+    float: left;
+    width: 500px;
+    margin: 0px 40px;
+    font-family: "Dm Sans";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    text-align: right;
+}
+.layers3d{
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 20px;
+    -webkit-user-drag: none;
+}
+.psd_layers{
+    width: 30%;
+    margin-top: -550px;
+    transform: translateY(-60%) translateX(15%);
+    -webkit-user-drag: none;
+}
+
 .footer{
     background: rgb(255, 255, 255);
     border-top: 1px solid rgb(216, 215, 210);
     transform: skewY(-2deg) translateY(-40px);
-    box-shadow: 0px -30px 30px rgb(233, 233, 233);
+    box-shadow: 0px -30px 30px rgb(14, 14, 14);
+    clear: both;
 }
 .footer_container{
     width: 300px;
@@ -249,7 +319,7 @@
 
 
 
-  
+
 
 #myBtn{     
     border: none;
