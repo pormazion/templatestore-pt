@@ -24,7 +24,7 @@
             <h1>Selecione sua região e linguagem</h1>
             <ul>
                 <li style="cursor: not-allowed;" title="Você já está com está linguagem!"><img src="brazilflag.png" style="filter: saturate(0);"><a style="cursor: not-allowed;">Português</a></li>
-                <li style="cursor: pointer;"><img src="usaflag.png"><a href="https://pormazion.github.io/templatestore-en/imgs/index_en.html">English</a></li>
+                <li style="cursor: pointer;"><img src="usaflag.png"><a href="https://pormazion.github.io/templatestore-en/imgs/index.html">English</a></li>
             </ul>
           </div>
         
@@ -41,7 +41,7 @@
 
 
 <div id="product_list" class="product_list">
-<div class="product_container">
+<div class="product_container" id="product_card">
     <div class="product_info">
             <div class="img-comp-container">
                     <div class="img-comp-img">
@@ -57,10 +57,11 @@
         <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
         <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans;">60R$</span> 45R$</h3>
         <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-179b58a8-c57c-4056-9b51-b395222ceb5d">Comprar</a></button>
+        <!-- <div id="discount"><i class="fas fa-ticket-alt" title="Adicionar cupom de desconto" onclick="addCupom()"></i><input type="text" id="cupominput" style="display: none;" placeholder="Cupom"></div> -->
     </div>
 </div>
 
-<div class="product_container">
+<div class="product_container" id="product_card">
     <div class="product_info">
             <div class="img-comp-container">
                     <div class="img-comp-img">
@@ -76,10 +77,11 @@
         <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
         <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans;">55R$</span> 40R$</h3>
         <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-f50bba24-a4cf-45e6-b197-aca52b9db085">Comprar</a></button>
+        <!-- <div id="discount"><i class="fas fa-ticket-alt" title="Adicionar cupom de desconto" onclick="addCupom()"></i><input type="text" id="cupominput" style="display: none;" placeholder="Cupom"></div> -->
     </div>
 </div>
 
-<div class="product_container">
+<div class="product_container" id="product_card">
     <div class="product_info">
             <div class="img-comp-container">
                     <div class="img-comp-img">
@@ -95,12 +97,22 @@
         <h2 class="product_type"><strong>Tipo:</strong> Template</h2>
         <h3 class="price"><span style="text-decoration: line-through; font-size: 15px; color: grey; font-family: Dm Sans; margin-top: -10%;">30R$</span> 25R$</h3>
         <button class="view_product"><a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438657280-3d980274-a3b8-4377-93a1-9582f8fdbf3d">Comprar</a></button>
+        <!-- <div id="discount"><i class="fas fa-ticket-alt" title="Adicionar cupom de desconto" onclick="addCupom()"></i><input type="text" id="cupominput" style="display: none;" placeholder="Cupom"></div> -->
     </div>
 </div>
 </div>
 </section>
 </main>
-
+<main id="informations">
+<section class="informations">
+  <div class="products_informations">
+    <h1>Reflexões e Sombreamentos</h1>
+    <h2>A template possui camadas de iluminação, reflexos e sombreamentos, o que faz o pós-processamento da imagem ser de excelente qualidade. Separadas por camadas, ao criar seu estilo de camisa ou moletom, adicionando objetos ou cores, a iluminação do mockup não será afetada!</h2>
+    <img class="layers3d" src="layers.jpg">
+    <img class="psd_layers" src="photoshhop_layers.png">
+  </div>
+</section>
+</main>
 <footer class="footer">
     <div class="footer_container">
         <img src="logo.png">
@@ -216,6 +228,13 @@ function initComparisons() {
     }
   }
 }
+
+// function addCupom(){
+//   var card = document.getElementById("product_card");
+//   var cupom = document.getElementById("cupominput");
+//   cupom.style.display = "inline"
+//   card.style.height = "720px";
+// }
 
 </script>
 <script>
